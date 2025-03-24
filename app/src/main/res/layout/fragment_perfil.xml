@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilFragment"
+    android:background="@color/background">
+
+    <!-- Layout principal con orientación vertical -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_gravity="center">
+
+            <!-- Imagen de perfil -->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_profile_placeholder"
+                android:contentDescription="Imagen de perfil"
+                android:layout_marginBottom="24dp"
+                android:scaleType="centerCrop"
+                android:background="@android:color/darker_gray"
+                android:padding="8dp"/>
+
+            <!-- Nombre del usuario -->
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Usuario"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/textColor"/>
+
+            <!-- Correo electrónico del usuario -->
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usuario@example.com"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:textColor="@color/textColor"/>
+
+            <!-- Botón de logout -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerrar sesión"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

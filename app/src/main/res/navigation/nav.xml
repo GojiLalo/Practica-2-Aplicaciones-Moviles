@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/page_perfil"
+    android:id="@+id/nav">
+
+    <fragment
+        android:id="@+id/page_perfil"
+        android:name="com.example.practica2v2.PerfilFragment"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/page_operaciones"
+        android:name="com.example.practica2v2.OperacionesFragment"
+        tools:layout="@layout/fragment_operaciones" />
+
+
+</navigation>
